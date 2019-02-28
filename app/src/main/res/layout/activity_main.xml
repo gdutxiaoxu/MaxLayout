@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.xj.maxlayout.MaxLayout
+                android:id="@+id/ml_1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                app:ml_ratio="2.0"
+                app:ml_ratio_standard="w_h">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/jsy03" />
+
+
+            </com.xj.maxlayout.MaxLayout>
+
+            <com.xj.maxlayout.MaxLayout
+                android:id="@+id/ml_2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/ml_1"
+                android:background="@android:color/holo_blue_light"
+                app:ml_ratio="0.8"
+                app:ml_ratio_standard="h_w">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/jsy04" />
+
+            </com.xj.maxlayout.MaxLayout>
+
+            <com.xj.maxlayout.MaxLayout
+                android:id="@+id/ml_03"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/ml_1"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/holo_blue_light"
+                app:ml_maxWidth="150dp"
+                app:ml_ratio="1"
+                app:ml_ratio_standard="h_w">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/jsy05" />
+
+            </com.xj.maxlayout.MaxLayout>
+
+            <com.xj.maxlayout.MaxLayout
+                android:id="@+id/ml_04"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_below="@+id/ml_2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/ml_03"
+                android:background="@android:color/holo_red_dark">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/jsy07" />
+
+            </com.xj.maxlayout.MaxLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    tools:context="com.xj.maxlayout.HeightSampleActivity">
+    <!--
+        <com.xj.maxlayout.MaxLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_blue_light"
+            app:ml_maxWidth="200dp"
+            app:ml_ratio="1.0"
+            app:ml_ratio_standard="h_w">
+
+        </com.xj.maxlayout.MaxLayout>-->
+
+    <com.xj.maxlayout.MaxLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_blue_light"
+        app:ml_maxWidth="200dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="指定最大宽度,指定最大宽度,指定最大宽度" />
+
+    </com.xj.maxlayout.MaxLayout>
+
+    <com.xj.maxlayout.MaxLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_blue_light"
+        app:ml_maxheight="200dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="指定最大高度" />
+
+    </com.xj.maxlayout.MaxLayout>
+
+    <com.xj.maxlayout.MaxLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_blue_light"
+        app:ml_maxWidth="200dp"
+        app:ml_maxheight="150dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="同时指定最大宽度和最大高度" />
+
+    </com.xj.maxlayout.MaxLayout>
+
+
+</LinearLayout>
